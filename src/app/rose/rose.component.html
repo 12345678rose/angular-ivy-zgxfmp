@@ -1,0 +1,39 @@
+<h1>{{ webName }}</h1>
+<h2><p>NANAY MARITES GOTOHURN</p></h2>
+<img src="{{ products[0].imageSource }}" alt="" />
+<table
+  border="15"
+  bordercolor="#FDA172"
+  width="500"
+  cellpadding="10"
+  cellspacing="20"
+>
+  <tr>
+    <th bgcolor="#FFE4C4">GOTO MENU</th>
+    <th bgcolor="#FFE4C4">PRICE</th>
+    <th bgcolor="#FFE4C4">SAMPLE PICTURE</th>
+  </tr>
+  <tr>
+    <td bgcolor="F0FFFF">{{ products[1].productName }}</td>
+    <td bgcolor="#F0FFFF">{{ products[1].productPrice }}</td>
+    <td bgcolor="#F0FFFF">
+      <img src="{{ products[1].productImage }}" alt="" />
+    </td>
+  </tr>
+  <tr>
+    <td bgcolor="#FFF0F5">{{ products[2].productName }}</td>
+    <td bgcolor="#FFF0F5">{{ products[2].productPrice }}</td>
+    <td bgcolor="#FFF0F5">
+      <img src="{{ products[2].productImage }}" alt="" />
+    </td>
+  </tr>
+  <tr>
+    <td bgcolor="#B0E0E6">{{ products[3].productName }}</td>
+    <td bgcolor="#B0E0E6">{{ products[3].productPrice }}</td>
+    <td bgcolor="#B0E0E6">
+      <img src="{{ products[3].productImage }}" alt="" />
+    </td>
+  </tr>
+</table>
+<br />
+<button (click)="sendToParent()"><h2>PLACE ORDER</h2></button>
